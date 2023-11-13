@@ -7,12 +7,61 @@ ul {
   list-style: none;
 }
 
+ul,
+figure {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 a {
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+  font-family: Urbanist;
+}
+
+.header-container > .header-content {
+  padding: 2rem 0;
+  background-color: #172e30;
+}
+.header-container > .header-content > .container > .row > .header-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container > .header-content > .container > .row > .header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-container > .header-content > .container > .row > .header-menu > nav {
+  width: 100%;
+}
+.header-container > .header-content > .container > .row > .header-menu > nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-container > .header-content > .container > .row > .header-menu > nav > ul > li:nth-of-type(1) > a {
+  color: #fff;
+}
+.header-container > .header-content > .container > .row > .header-menu > nav > ul > li > a {
+  color: rgba(255, 255, 255, 0.4509803922);
+  font-size: 1.25rem;
+}
+.header-container > .header-content > .container > .row > .button-menu {
+  display: flex;
+  align-items: center;
+}
+.header-container > .header-content > .container > .row > .button-menu > a {
+  width: 85%;
+  text-align: center;
+  display: block;
+  font-size: 0.9rem;
+  background-color: rgba(39, 39, 39, 0.3803921569);
+  padding: 0.8rem;
+  color: #fff;
+  background: url(../img/Group\ 4.svg) no-repeat center center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */

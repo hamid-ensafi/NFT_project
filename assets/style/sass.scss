@@ -1,13 +1,93 @@
-body{
+body {
     margin: 0 !important;
     padding: 0 !important;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+ul,
+figure {
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+a {
     text-decoration: none;
 }
-*{
+
+* {
     box-sizing: border-box;
+    font-family: Urbanist;
+}
+
+// normalize 
+
+
+
+.header-container {
+
+    >.header-content {
+        padding: 2rem 0;
+        background-color: #172e30;
+
+        >.container {
+            >.row {
+                >.header-logo {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                >.header-menu {
+                    display: flex;
+                    align-items: center;
+
+                    >nav {
+                        width: 100%;
+
+                        >ul {
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            >li {
+                                &:nth-of-type(1) {
+                                    >a {
+                                        color: #fff;
+                                    }
+                                }
+
+                                >a {
+                                    color: #ffffff73;
+                                    font-size: 1.25rem;
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >.button-menu {
+                    display: flex;
+                    align-items: center;
+
+                    >a {
+                        width: 85%;
+                        text-align: center;
+                        display: block;
+                        font-size: .9rem;
+                        background-color: #27272761;
+                        padding: .8rem;
+                        color: #fff;
+                        background: url(../img/Group\ 4.svg) no-repeat center center /cover;
+
+
+                    }
+                }
+            }
+        }
+    }
 }
